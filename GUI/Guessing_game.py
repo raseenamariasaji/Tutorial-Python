@@ -27,7 +27,6 @@ class GuessingGame(EasyFrame):
             self.hintLabel["text"] = "Sorry, too large!"
 
     def newGame(self):
-        """Resets the data and GUI to their original states."""
         self.myNumber = random.randint(1, 100)
         self.count = 0
         greeting = "Guess a number between 1 and 100."
@@ -37,7 +36,6 @@ class GuessingGame(EasyFrame):
 
 
 def main():
-    """Instantiate and pop up the window."""
     GuessingGame().mainloop()
 
 
